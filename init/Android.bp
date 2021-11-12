@@ -1,0 +1,14 @@
+
+cc_library_static {
+    name: "libinit_thyme",
+    include_dirs: [
+        "system/core/base/include",
+        "system/core/init",
+    ],
+    cflags: [
+        "-Wall",
+//      "-DBUILD_FOR_THYME",
+    ],
+    srcs: ["init_thyme.cpp"],
+    recovery_available: true,
+}
